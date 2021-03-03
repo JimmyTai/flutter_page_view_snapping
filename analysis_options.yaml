@@ -1,0 +1,34 @@
+
+include: package:effective_dart/analysis_options.yaml
+
+analyzer:
+  exclude: [build/**]
+  strong-mode:
+    implicit-casts: true
+    implicit-dynamic: true
+  errors:
+    missing_required_param: error
+    use_key_in_widget_constructors: warning
+    await_only_futures: error
+    leading_newlines_in_multiline_strings: error
+    prefer_contains: error
+
+
+
+# https://dart-lang.github.io/linter/lints/
+# https://dart.dev/guides/language/analysis-options
+linter:
+  rules:
+    lines_longer_than_80_chars: false
+    constant_identifier_names: false
+    public_member_api_docs: false
+    omit_local_variable_types: false
+    prefer_single_quotes: true
+    use_key_in_widget_constructors: true
+    unnecessary_final: false
+    prefer_final_locals: true
+    prefer_const_constructors_in_immutables: true
+    unnecessary_overrides: true
+    unnecessary_await_in_return: true
+    sort_constructors_first: false
+    sort_unnamed_constructors_first: true
